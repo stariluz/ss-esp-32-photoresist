@@ -2,8 +2,7 @@ import serial
 import time
 import datetime
 
-# Configura tu puerto serie aquí
-port = 'COM3'  # Cambia esto al puerto correspondiente (ej. '/dev/ttyUSB0' en Linux)
+port = 'COM3'
 baud_rate = 9600
 file_path = f'./data/{datetime.datetime.now().strftime("%B %d, %Y.%H-%M-%S")}.csv'
 
@@ -12,8 +11,6 @@ ser = serial.Serial(port, baud_rate)
 
 # Espera que el puerto serie se estabilice
 time.sleep(2)
-
-
 
 # Abre el archivo para guardar los datos
 with open(file_path, 'w') as f:
