@@ -1,7 +1,7 @@
 #include <esp32-hal-gpio.h> 
  
 const int ledChannel = 0; 
-const int ledPin = 15; 
+const int ledPin = GPIO_NUM_13; 
 const int frequency = 5000; 
 const int resolution = 8; 
  
